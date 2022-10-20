@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Bibi</a>
+        <ul>
+            <li><a href="galeria.html" class="active">Pictures</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="img/stars.png" id="stars">
+        <img src="img/moon.png" id="moon">
+        <img src="img/mountains_behind.png" id="mountains_behind">
+        <h2 id="text">Hermosa💜 </h2>
+        <a href="music.html" id="btn">Music ♫ </a>
+        <img src="img/mountains_front.png" id="mountains_front">
+
+    </section>
+    <div class="sec" id="sec">
+    <h2>El brillo de tus ojitos es alegre y claro como el brillo de luna.</h2>
+    <p>Mi vida siempre ha sido simple, nunca le pedí nada perfecto a la vida, solo una vida tranquila. Pero algo habré hecho bien que la vida me dio un regalo, una niña perfecta, una pequeña que se merece todo el amor del mundo. La vida que ahora tengo y la tranquilidad que me das en ella que fue lo que siempre quise es como estar en un sueño, al lado de una cara bonita. <br><br>
+
+        Perfectamente sabes cómo llenar cada día, pareciese que fueses una pequeña hada, que con sus alitas revolotea con una pequeña cubeta, llena de brillo y magia. Vaciandola en cada espacio que hay en mi, llenándome de amor, de tranquilidad, de paz, ¿la mayor magia? Es tu voz. <br><br>
+        
+        No sobra nuevamente decir que tu carita me da alegría, tu risa me da felicidad, mi mayor bien es cuando tú estás bien. <br><br>
+        
+        "Había una vez un chico, que perdido en el mar oscuro vio una luz, una luz que decidió seguir, quería encontrar un hogar. Este chico viajo por mucho tiempo, navegó y navegó, y cuando ya se había quedado sin barco, solo remó y remó hasta que por fin llegó a la luz, al encontrarse con esa luz quedó fascinado, era un hermoso cristal, pareciera como si la misma luz de la luna saliera de ella y se reflejará en sus ojos, había alguien dentro del cristal, -noto el chico.
+        Parecía una escultura de una princesa dormida, pero no era el cristal que brillaba, era ella quien le daba brillo al cristal, el chico asombrado se acercó y sus ojos casi que saltaban de sus cuencas de cual asombrado el estaba. Al tocar el cristal escucho una dulce voz que le saludaba y el chico contestó" <br><br>
+        
+        Presiosa d k sielo te kaiste -dijo el chico con un seño de fukboi y una mano en el bolsillo y la otra peinando su alocado cabello. <br><br>
+        
+        Mauricio. <br><br>
+        
+        Lysmuch.</p>
+    </div>
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let mountains_front= document.getElementById('mountains_front');
+        let header = document.querySelector('header');
+
+        window,addEventListener('scroll',function(){
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+            mountains_front.style.top = value * 0 + 'px';
+            text.style.marginRight = value * 4 + 'px';
+            text.style.marginTop = value * 1.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            header.style.top = value * 0.5 + 'px';
+            
+
+        })
+
+    </script>
+    
+</body>
+</html>
